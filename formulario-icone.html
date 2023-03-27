@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="black" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>formulario com icone</title>
+</head>
+<body>
+    <header>
+        <button class="modoEscuro" onclick="modoescuro(this.value)" value="escuro">escuro</button>
+        <button onclick="bigFont()">A+</button>
+        <button onclick="peqFont()">A-</button>
+    </header>
+    <section id="maxFont">
+        <main>
+         <h1 class="Titulo" id="maxFont">Login Form</h1>
+            <div class="redes">
+                <button id="maxFont" class="facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+                <button id="maxFont" class="twitter"><i class="fa-brands fa-twitter"></i> Twitter</button>
+            </div>
+            <form action="com-icones">
+                <div class="formulario">
+                    <div class="input-tt">
+                        <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        <input type="email number" id="Email" placeholder="Email or Phone">
+                    </div>
+                    <div class="input-tt">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <input type="password" id="senha" placeholder="Password">
+                    </div>
+                </div>
+                <div class="check" id="maxFont">
+                    <p class="black-mode"><input type="checkbox" id="lembrar" value="Remember-me"> Remember-me</p>
+                    <p><a href="">Forgot password?</a></p>
+                </div>
+            </form>
+            <button class="btnLogin" id="maxFont">Login</button>
+            <p class="black-mode">Not a member? <a href="">Singup now</a></p>
+        </main>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

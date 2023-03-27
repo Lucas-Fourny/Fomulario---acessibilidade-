@@ -1,0 +1,121 @@
+:root {
+    --cor-1:linear-gradient(to right,rgb(119,4,181),rgb(208,48,187));
+    --cor-2:#ebf7fd;
+    --cor-3:#38548F;
+    --cor-4:#1A8CD8;
+    --font-1:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px ;
+    font-family:var(--font-1);
+}
+body {
+    background: var(--cor-1);
+}
+.modoEscuro {
+    height: 5vh;
+    width:5%;
+    border-radius: 50rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.Titulo {
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    font-size: 170%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+    border-radius: 1rem;
+    padding: 1%;
+    background: var(--cor-2);
+    width: 20rem;
+    height: 60vh;
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.redes button {
+    width: 45%;
+    height: 7vh;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 100%;
+}
+.redes .facebook {
+    background: var(--cor-3);
+    color:white
+}
+.redes .twitter {
+    background: var(--cor-4);
+    color: white;
+}
+form {
+    width: 100%;
+}
+.formulario{ 
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    row-gap: 0.2rem;
+    margin: 1rem 0;
+}
+.input-tt input {
+    height: 5vh;
+    width: 89%;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #9e9d9d;
+}
+::placeholder {
+    text-align: left;
+    color: lightgray;
+}
+.input-tt i {
+    position:absolute;
+    margin: 0.4rem 0 0 0.4rem;
+    font-size: 1.2rem;
+    color: lightgray;
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 80%;
+}
+.btnLogin {
+    width: 100%;
+    height: 8vh;
+    border-radius: 1rem;
+    background: var(--cor-1);
+    color: white;
+    font-size: 120%;
+    margin: 10% 0 2% 0 ;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+@media (max-width:666px){
+    .btnLogin{
+        margin: 1%;
+        font-size: 100%;
+        
+    }
+}
